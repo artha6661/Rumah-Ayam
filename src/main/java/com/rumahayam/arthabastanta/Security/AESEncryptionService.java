@@ -3,7 +3,6 @@ package com.rumahayam.arthabastanta.Security;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
 
-import com.rumahayam.arthabastanta.Bean.EncryptedDataBean;
 
 import javax.crypto.Cipher;
 import javax.crypto.SecretKey;
