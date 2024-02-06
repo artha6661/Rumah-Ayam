@@ -1,10 +1,14 @@
 package com.rumahayam.arthabastanta.Repository;
 
+import java.util.Optional;
+
 import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
 
 import com.rumahayam.arthabastanta.Entity.RoleEntity;
+import com.rumahayam.arthabastanta.Enum.RoleEnum;
 
+@Repository
 public interface RoleRepository extends JpaRepository<RoleEntity, Long> {
-
-    RoleEntity findByName(String name);
+    Optional<RoleEntity> findByName(RoleEnum name);
 }
